@@ -1,5 +1,7 @@
 #!/bin/bash
 
+##Usage: nohup sh check_rs_status.sh >resoult.log &
+
 logfile_path=/data/app/logs
 logfile_date=`date -d today +%Y-%m-%d`
 all_start_line=`wc -l $logfile_path/all.$logfile_date.log|awk '{print $1}'`
